@@ -1,0 +1,19 @@
+// this code written in index.js file That display mxplayer best WebSeries.
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  <>
+    <h1>Hello Everyone</h1>
+    <p>Mx Player best five WebSeries </p>
+    <ol>
+      <li>I am Not a Robot</li>
+      <li>My Girlfriend is an Alien</li>
+      <li>Hotel Del Luna</li>
+      <li>Pinnochiyo</li>
+      <li>Doctor John</li>
+    </ol>
+  </>,
+  document.getElementById('root')
+);
+

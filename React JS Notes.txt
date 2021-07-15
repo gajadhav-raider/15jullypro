@@ -1,0 +1,38 @@
+//const React= require('react');  old Version
+//const ReactDOM= require('react-dom');
+
+ReactDOM.render(<h1>Welcome!!</h1>,document.getElementById('root'));
+import React from 'react';//Morden javascript
+import ReactDOM from 'react-dom';
+ReactDOM.render(<h1>Welcome!!</h1>,document.getElementById('root'));
+
+JSX//JSX also called as javascript xml,javascript Extention
+
+ReactDOM.render( /*#__PURE__*/React.createElement("h1", null, "Welcome!!"), 
+document.getElementById('root'));//this code browser get with the help of JSX
+
+when we want multiple JSX element add in our page
+way1//
+ReactDOM.render(<div>
+<h1>Welcome!!</h1>
+<p>Good Morning Everyone</p>
+<h2>Thank You</h2>
+</div>
+,document.getElementById('root'));
+
+if our React Version is 16 or Greater than 16 
+then way 2//
+ReactDOM.render([
+<h1>Welcome!!</h1>,
+<p>Good Morning Everyone</p>,
+<h2>Thank You</h2>,
+],document.getElementById('root'));
+
+//React Fragment it remove unnecessary div tag
+ReactDOM.render(
+<React.Fragment>
+<h1>Hello!!</h1>
+<p>Good Morning Everyone</p>
+<h2>Thank You</h2>
+</React.Fragment>
+,document.getElementById('root'));
